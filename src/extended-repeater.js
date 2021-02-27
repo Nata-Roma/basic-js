@@ -1,6 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = function repeater(str, { repeatTimes, separator = "+", addition, additionRepeatTimes, additionSeparator }) {
+module.exports = function repeater(str, { repeatTimes, separator = "+", addition, additionRepeatTimes, additionSeparator = '|'}) {
 
   if(str === undefined) {
     str = ''
